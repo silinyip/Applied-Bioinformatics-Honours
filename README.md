@@ -1,7 +1,7 @@
 # Applied-Bioinformatics-Honours
 
 ## Python Introductory Course
-Weekly tasks involving the use of Pandas, Numpy and Bash scripting. This serves as preparation for my honours research project whereby various bioinformatics tools will be used to analyse cellular heterogeneity in normal vs. colorectal cancer tissue using single-cell RNA sequencing data.
+Weekly tasks involving the use of Pandas, Numpy and Bash scripting. "Week 4" contains notebooks from a data science workshop which took place at UJ. These notebooks contained a lot of overlap with what I am expected to do. This Python Introductory Course served as preparation for my honours research project whereby various bioinformatics tools will be used to analyse cellular heterogeneity in normal vs. colorectal cancer tissue using single-cell RNA sequencing data.
 
 ## Single-Cell RNA Sequencing
 
