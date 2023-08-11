@@ -25,6 +25,6 @@ The parameters included in the `fastq-dump` that were not present in the `faster
 
 The PRJNA432551 dataset was later decided to be unsuitable for this project, so a new dataset deposited under the accession PRJEB64127 from the EMBL-EBI website was used. This new dataset does not have the SRA numbers available, only the FTP links. Thus, these links were downloaded as a TSV file from the EMBL-EBI website. The "Splitting PRJNA432551 FTP List (using pandas).py" script was used to split the "PRJNA432551.csv" file into the "split_data.csv"file. These links were then organised into two text files: Normal and Neoplasm.
 
-The "FASTQ Download (using wget).py" script was used to download these files in Linux on the computer in GH527. The "FASTQ Download (using iwr).py" script is the Windows version of the download script.
+The "FASTQ Download (using wget).py" script was used to download these files on the computer in GH527 which uses Linux. The "FASTQ Download (using iwr).py" script is the Windows version of the download script.
 
 Once most of the FASTQ files have been downloaded, "FastQC Script (no. 2).py" was used to generate FastQC reports of each FASTQ file.
