@@ -31,11 +31,16 @@ def downloadfastq(samples_input):
         for link in samples:
             
             print(link) #double-check the download link
+
+            file_name = link.split("/")[-1]
             
             download_command = "wget -P /media/usb/SILIN/PRJNA779978/" + lbl + " " + link
             print(download_command) #double check wget command
 
-            os.system(download_command) #execute
+            lbl_path = "/media/usb/SILIN/PRJNA779978/" + lbl + file_name #skips the download command if file already exits
+
+            if not os.path.exists(lbl_path):
+                os.system(download_command) #execute
 
 
 def run_fastqc(file_path):
