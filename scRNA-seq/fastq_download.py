@@ -10,7 +10,7 @@ print(df.head()) #preview document
 
 samples_list = list(df["fastq_ftp"]) #sample ftp-links
 sample_names_list = list(df["sample_accession"]) #sample labels
-samples_list = samples_list[:5] #selecting first sample to test code, before commensing with large scale download
+samples_list = samples_list[:] #selecting first sample to test code, before commensing with large scale download
 
 try:
     os.makedirs("/media/usb/SILIN/PRJNA779978") #avoid using os.chdir, type entire directory    
