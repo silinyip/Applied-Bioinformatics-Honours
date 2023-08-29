@@ -5,9 +5,9 @@ Weekly tasks involving the use of Pandas, Numpy and Bash scripting. "Week 4" con
 
 ## Single-Cell RNA Sequencing
 
-### Files Download
-SRA numbers of the PRJNA432551 dataset were organised into three text files: Normal Tissue, Primary Tumour, and Metastatic Tumour.
-The "FASTQ Download (original script).py" script was used to download the data files deposited under this accession number from the EMBL-EBI website. Firstly, the `prefetch` command was used to download all the necessary files (namely SRA files). These SRA files are then converted to FASTQ format using the `fasterq-dump` command.
+### FASTQ Files Download
+Sequence Read Archive (SRA) numbers of the PRJNA432551 dataset were organised into three text files: Normal Tissue, Primary Tumour, and Metastatic Tumour.
+The "FASTQ Download (original script).py" script was used to download the data files deposited under this accession number from the EMBL-EBI website. This script made use of SRA Toolkit which allows direct access to SRA - a public repository for NGS data. Firstly, the `prefetch` command was used to download all the necessary files (namely SRA files). These SRA files are then converted to FASTQ format using the `fasterq-dump` command.
 The parameters included in the "fasterq_dump` command were:
 1) `--split-3` splits paired-end reads. First biological reads satisfying dumping conditions are placed in files *_1.fastq and *_2.fastq. If only one biological read is present it is placed in *.fastq.
 2) `--threads` specifies the number of threads (parallel processes) that SRA toolkit can use for faster data retrieval.
@@ -28,3 +28,16 @@ The PRJNA432551 dataset was later decided to be unsuitable for this project, so 
 The "FASTQ Download (using wget).py" script was used to download these files on the computer in GH527 which uses Linux. The "FASTQ Download (using iwr).py" script is the Windows version of the download script.
 
 Once most of the FASTQ files have been downloaded, "FastQC Script (no. 2).py" was used to generate FastQC reports of each FASTQ file.
+
+However, majority of the files from this dataset failed to generate FastQC reports. Consequently, the search for a new dataset was embarked upon. Finally, the dataset deposited under the accession PRJNA779978 was selected. This dataset was downloaded using the "fastq_download.py" script which incorporates the FASTQ download and FastQC generation processes in one script.
+
+### FastQC
+
+
+### MultiQC
+
+
+### Cell Ranger
+
+
+### Kallisto
