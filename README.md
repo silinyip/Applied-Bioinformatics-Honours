@@ -36,6 +36,20 @@ However, majority of the files from this dataset failed to generate FastQC repor
 #### PRJNA779978 (Dataset 3)
 Finally, the dataset deposited under the accession PRJNA779978 was selected. This dataset was downloaded using the "fastq_download.py" script which incorporates the FASTQ download and FastQC generation processes in one script.
 
+Only 2/6 samples were used in this project due to time constraints. Furthermore, not all the files used in this project were able to generate FastQC reports. Ideally, the files used in the downstream analyses should be those that were able to generate FastQC reports but, once again, due to time constraints, instructions were given to use even the files that failed to generate FastQC reports.
+| Patient     | Sample Accession | Run Accession | FastQC Generated |
+|-------------|------------------|---------------|------------------|
+|Left CRC 1   | SAMN23098192     | SRR16931960   | Both reads       |
+|             |                  | SRR16931961   |                  |
+|             |                  | SRR16931966   | Read 1           |
+|             |                  | SRR16931967   |                  |
+| Right CRC 1 | SAMN23098196     | SRR16931983   | Read 1           |
+|             |                  | SRR16931981   | Read 2           |
+|             |                  | SRR16931982   |                  |
+|             |                  | SRR16931984   |                  |
+|             |                  | SRR16931987   |                  |
+|             |                  | SRR16931985   | Read 2           |
+
 MultiQC was used to combine all the FastQC reports generated for this dataset into one report for easier analysis.
 
 ### 3. Cell Ranger
