@@ -39,7 +39,7 @@ Finally, the dataset deposited under the accession PRJNA779978 was selected. Thi
 Only 2/6 samples were used in this project due to time constraints. Furthermore, not all the files used in this project were able to generate FastQC reports. Ideally, the files used in the downstream analyses should be those that were able to generate FastQC reports but, once again, due to time constraints, instructions were given to use even the files that failed to generate FastQC reports.
 | Patient     | Sample Accession | Run Accession | FastQC Generated |
 |-------------|------------------|---------------|------------------|
-|Left CRC 1   | SAMN23098192     | SRR16931960   | Both reads       |
+| Left CRC 1  | SAMN23098192     | SRR16931960   | Both reads       |
 |             |                  | SRR16931961   |                  |
 |             |                  | SRR16931966   | Read 1           |
 |             |                  | SRR16931967   |                  |
